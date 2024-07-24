@@ -1,17 +1,21 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> {% block title %} Page Title{% endblock%} </title>
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
-    <link rel="stylesheet" href="{% static 'dashboard/styles.css' %}" />
+    {% comment %} <link rel="stylesheet" href="{% static 'dashboard/styles.css' %}" /> {% endcomment %}
     <link rel="icon" type="image/x-icon" href="{% static 'dashboard/icons/favicon.ico' %}">
     {% block head %} Head Elements {% endblock %}
   </head>
   <body>
-    {% block modals %} Modals {% endblock modals %} 
+    <section class="w-full">
+      {% include 'components/navbar.html' %}
+    </section>
+
+    {% block modals %}Modals{% endblock modals %} 
     
     {% block content %}Content{% endblock content %}
 

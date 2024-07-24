@@ -9,3 +9,11 @@ def index(request: HttpRequest):
     }
     return render(request, "dashboard/index.html", context)
 
+
+
+def login(request: HttpRequest):
+    context: dict = {
+        "name": "Adrian Gookool",
+        "age": 26
+    }
+    return render(request, "dashboard/login.html", context)

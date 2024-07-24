@@ -17,3 +17,4 @@ python_full_version = "3.12.4"
 
 [scripts]
 start = "python manage.py runserver"
+build-styles = "npx tailwindcss -i ./tailwind.css -o ./static/css/globals.css --watch"

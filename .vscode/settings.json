@@ -6,6 +6,8 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
+        "**/*lock.*": false,
+        "**/node_modules": true,
         "**/dashboard": false,
         "**/expense_tracker": true,
         "**/file_manager": true,
@@ -14,7 +16,62 @@
     "files.associations": {
         "*.html": "django-html",
         "*.js": "javascript",
-        "*.css": "css",
+        "*.css": "tailwindcss",
         "*.md": "markdown"
-    }
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "192.168.33.58",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "mondeum-uk",
+            "group": "cmeg-server",
+            "database": "mondeum-uk",
+            "username": "monduser",
+            "password": "pass1234"
+        },
+        {
+            "previewLimit": 50,
+            "server": "192.168.33.58",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "mondeum-ky",
+            "group": "cmeg-server",
+            "database": "mondeum-ky",
+            "username": "monduser",
+            "password": "pass1234"
+        },
+        {
+            "previewLimit": 50,
+            "server": "192.168.33.58",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "mondeum-tt",
+            "group": "cmeg-server",
+            "database": "mondeum-tt",
+            "username": "monduser",
+            "password": "pass1234"
+        },
+        {
+            "previewLimit": 50,
+            "server": "192.168.33.58",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "mondeum-us",
+            "group": "cmeg-server",
+            "database": "mondeum-us",
+            "username": "monduser",
+            "password": "pass1234"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "django-db",
+            "database": "./homelab/db.sqlite3"
+        }
+    ]
 }

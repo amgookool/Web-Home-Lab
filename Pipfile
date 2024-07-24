@@ -4,9 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.12"
 python_full_version = "3.12.4"
+
+[scripts]
+start = "python manage.py runserver"

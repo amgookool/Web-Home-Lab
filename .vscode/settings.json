@@ -19,6 +19,7 @@
         "*.css": "tailwindcss",
         "*.md": "markdown"
     },
+    
     "emmet.includeLanguages": {
         "django-html": "html",
     },

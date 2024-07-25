@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.template import Context
+from django.contrib import messages
 from django.http import (
     HttpRequest,
     HttpResponse,
@@ -10,6 +12,7 @@ from django.urls import reverse
 
 # Create your views here.
 def index(request: HttpRequest):
+    # context = Context({"name": "Adrian Gookool", "age": 26})
     context: dict = {"name": "Adrian Gookool", "age": 26}
     return render(request, "dashboard/index.html", context)
 
@@ -25,3 +28,8 @@ def login(request: HttpRequest):
         if username == "admin" and password == "P@ssword123!":
             return HttpResponseRedirect(reverse("index"))
         return HttpResponseNotFound("Invalid credentials")
+
+
+
+def reset_password(request):
+    return render(request, "dashboard/reset-password.html")

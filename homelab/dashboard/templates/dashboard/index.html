@@ -1,21 +1,18 @@
-{% extends './base.html' %} 
-
-{% block title %} Dashboard {% endblock %} 
-
-{% block head %}{% endblock %} 
-
-{% block modals %}{% endblock modals %} 
-
+{% extends "./base.html" %}
+{% block title %}
+    Dashboard
+{% endblock title %}
+{% block head %}
+{% endblock head %}
+{% block modals %}
+{% endblock modals %}
 {% block content %}
-<h1>This is content for Dashboard Route</h1>
-<button
-  class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900"
->
-  Button
-</button>
-
-{{ name }} {{ age }} 
-
-{% endblock %} 
-
-{% block scripts %} {% endblock %}
+    <h1>This is content for Dashboard Route</h1>
+    <button id="change-theme"
+            class="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
+        Button
+    </button>
+    {{ name }} {{ age }}
+{% endblock content %}
+{% block scripts %}
+{% endblock scripts %}
